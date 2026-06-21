@@ -1,0 +1,20 @@
+# خروجی‌های کامپایلر دات‌نت
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# پوشه پابلش نهایی ما
+publish/
+
+# فایل‌های تنظیمات محیطی VS Code
+.vscode/
+*.user
+*.suo
+
+# فایل‌های لاگ محلی
+*.log
+error_log.txt

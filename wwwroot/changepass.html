@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-body">
+
+    <div class="card-container">
+        <a href="index.html" class="back-link" id="backLink">← بازگشت به اصلی</a>
+        <div class="card-header">
+            <h2 id="formTitle">تغییر رمز عبور کاربر محلی</h2>
+        </div>
+
+        <div id="loader" class="loader-spinner" style="display: none;"></div>
+        <div id="alertBox" class="alert" style="display: none;"></div>
+
+        <form id="passwordForm" onsubmit="handlePasswordSubmit(event)">
+            <div class="form-group"><label id="lblUser">نام کاربری</label><input type="text" id="username" required></div>
+            <div class="form-group"><label id="lblOld">رمز عبور فعلی</label><input type="password" id="oldPassword" required></div>
+            <div class="form-group"><label id="lblNew">رمز عبور جدید</label><input type="password" id="newPassword" required></div>
+            <div class="form-group"><label id="lblConfirm">تکرار رمز عبور جدید</label><input type="password" id="confirmPassword" required></div>
+            <button type="submit" id="btnSubmit" class="btn-submit">به‌روزرسانی رمز عبور</button>
+        </form>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script>
+        initFormLanguage();
+    </script>
+</body>
+</html>
